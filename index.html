@@ -10,19 +10,23 @@
 </head>
 <body>
     <div class="container">
-        <header class="mov-a">
+        <div id="btnTop">
+            <img src="assets/IMGS/seta-cima.png" alt="">
+        </div>
+        <header id="cor" class="mov-a">
             <div class="logo">
-                <img src="assets/IMGS/Logo PdC-Branco.png" alt="Logo PdC">
+                <img id="log-a" src="assets/IMGS/Logo PdC-Branco.png" alt="Logo PdC">
+                <img id="log-b" src="assets/IMGS/Logo PdC.png" alt="Logo PdC">
             </div>
             <div class="menu-pc">
                 <ul>
-                    <li><a href="#inicio">INÍCIO</a></li>
-                    <li><a href="#provas">PROVAS</a></li>
-                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#inicio" id="link-a">INÍCIO</a></li>
+                    <li><a href="#provas" id="link-b">PROVAS</a></li>
+                    <li><a href="#sobre" id="link-c">SOBRE</a></li>
                 </ul>
             </div>
             <div class="menu-btn" onclick="menuShow()">
-                <svg class="menu-btn-svg" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="menu-btn-svg" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <line x1="4" y1="6" x2="20" y2="6" />
                     <line x1="4" y1="12" x2="20" y2="12" />
@@ -38,14 +42,32 @@
             </div>
         </header>
         <div class="apresentacao" id="inicio">
-            <h1>Fique à vontade para olhar o site e pegar quantas questões de prova você preferir!</h1>
-            <h2>Todas as questões estão resolvidas!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sapiente illo id tenetur nam numquam, cumque eaque perspiciatis.</p>
-            <div class="banner">
-                <img src="assets/IMGS/Banner.jpg" alt="banner">
+            <h1 class="mov-b">Fique à vontade para olhar o site e pegar quantas questões de provas você preferir!</h1>
+            <h2 class="mov-c">Todas as questões estão resolvidas!</h2>
+            <p class="mov-b">As questões foram retiradas de alguns canais e provas de concursos como ESA, EsPCEx, EEAr entre outras.</p>
+            <div class="btn-questoes mov-c">
+                <a href="#">Ver Questões</a>
+            </div>
+            <div class="banner mov-a">
+                <h1>Exemplos de algumas provas de concursos que temos!</h1>
+                <p class="mov-d" ><strong class="cor-principal">ESA</strong> (Escola de Sargentos das Armas)</p>
+                <p class="mov-e" ><strong class="cor-principal">EsPECx</strong> (Escola Preparatória de Cadetes do Exército)</p>
+                <p class="mov-f" ><strong class="cor-principal">EEAr</strong> (Escola de Especialistas de Aeronáutica)</p>
+                <p class="mov-g" ><strong class="cor-principal">CFN</strong> (Corpo de Fuzileiros Navais)</p>
+                <p class="mov-h" ><strong class="cor-principal">EAM</strong> (Escola de Aprendizes-Marinheiros)</p>
+                <div class="brasao">
+                    <img class="mov-d" src="assets/IMGS/Logo ESA.png" alt="Logo ESA">
+                    <img class="mov-e" src="assets/IMGS/Logo EsPCEx.png" alt="Logo EsPCEx">
+                    <img class="mov-f" src="assets/IMGS/Logo EEar.png" alt="Logo EEAr">
+                    <img class="mov-g" src="assets/IMGS/Logo CFN.png" alt="Logo CFN">
+                    <img class="mov-h" src="assets/IMGS/Logo EAM.png" alt="Logo EAM">
+                </div>
             </div>
         </div>
+        
     </div>
     <script src="java.js"></script>
+    <script src="scroltop.js"></script>
+    <script src="scrolmenu.js"></script>
 </body>
 </html>

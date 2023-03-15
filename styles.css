@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .container {
@@ -23,8 +24,13 @@ header {
     width: 100%;
     height: 70px;
     position: fixed;
-    background-color: transparent;
     z-index: 999;
+}
+
+#cor {
+    width: 100%;
+    height: 70px;
+    transition: 0.4s;
 }
 
 .logo {
@@ -33,13 +39,17 @@ header {
 
 .logo img {
     width: 40px;
-    padding: 11px;
+    padding: 14px;
+}
+
+#log-b {
+    display: none;
 }
 
 .menu-pc {
     position: absolute;
-    top: 15px;
-    right: 0px;
+    top: 13px;
+    right: 15px;
 }
 
 .menu-pc ul {
@@ -57,8 +67,8 @@ header {
     padding: 5px 15px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
     font-family: 'Poppins', sans-serif;
     transition: 0.4s;
 }
@@ -83,6 +93,7 @@ header {
     cursor: pointer;
     border-radius: 5px;
     transition: 0.4s;
+    stroke: white;
 }
 
 .menu-btn-svg:hover {
@@ -118,7 +129,7 @@ header {
 
 .menu-mobile a:hover {
     color: white;
-    background-color: #1165d4;
+    background-color: #06254e;
 }
 
 @media screen and (max-width: 400px){
@@ -139,10 +150,11 @@ header {
     width: 100%;
     height: 600px;
     padding-top: 100px;
-    background-color: #06254e;
+    background-image: linear-gradient(to left, #06254e, #06254e, #1f3758);
+    position: relative;
 }
 
-.apresentacao h1 {
+.apresentacao > h1 {
     max-width: 800px;
     margin: auto;
     text-align: center;
@@ -151,9 +163,10 @@ header {
     font-family: 'Poppins', sans-serif;
     color: #e0ebfa;
     padding: 10px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.apresentacao h2 {
+.apresentacao > h2 {
     max-width: 800px;
     margin: auto;
     text-align: center;
@@ -161,9 +174,10 @@ header {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #9dbff0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.apresentacao p {
+.apresentacao > p {
     max-width: 500px;
     margin: auto;
     text-align: center;
@@ -172,27 +186,119 @@ header {
     font-family: 'Poppins', sans-serif;
     color: #e0ebfa;
     padding: 10px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-questoes {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.btn-questoes > a {
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 5px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+.btn-questoes > a:hover {
+    background-color: #cccdce;
 }
 
 .banner {
-    text-align: center;
-    margin: auto;
-    padding-top: 20px;
-}
-
-.banner img{
-    width: 50%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: auto;
     height: auto;
-    border-radius: 8px;
+    padding: 10px;
 }
 
-@media screen and (max-width: 1000px) {
-    .banner img {
-        width: 70%;
+.banner h1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: black;
+    padding: 5px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner p {
+    font-size: 13px;
+    text-align: initial;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    font-weight: 500;
+    color: black;
+    padding: 1px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.brasao {
+    margin: auto;
+    text-align: center;
+}
+
+.brasao img {
+    display: inline-block;
+    height: 100px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+    .brasao img {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .banner {
+        min-width: 300px;
+    }
+    .banner h1 {
+        font-size: 15px;
     }
 }
 
 /*==================*/
-.mov-a, .mov-b {
+
+#btnTop{
+    background-color: #06254e;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#btnTop:hover {
+    background-color: #242d3a;
+}
+
+/*==================*/
+.mov-a, .mov-b, .mov-c, .mov-d {
     visibility: hidden;
+}
+
+/*========ajustes========*/
+
+.cor-principal {
+    font-weight: 900;
+    color: #06254e;
 }
