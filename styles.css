@@ -219,9 +219,27 @@ header {
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    width: auto;
+    width: 90%;
     height: auto;
     padding: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+    .banner {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .banner {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .banner {
+        width: 50%;
+    }
 }
 
 .banner h1 {
@@ -234,15 +252,15 @@ header {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.banner p {
+.concursos p {
     font-size: 13px;
-    text-align: initial;
     font-family: 'Poppins', sans-serif;
     display: block;
     font-weight: 500;
     color: black;
     padding: 1px;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .brasao {
@@ -268,6 +286,30 @@ header {
     }
     .banner h1 {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .apresentacao > h1 {
+        font-size: 18px;
+    }
+    .apresentacao > h2 {
+        font-size: 16px;
+    }
+    .apresentacao > p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .apresentacao > h1 {
+        font-size: 15px;
+    }
+    .apresentacao > h2 {
+        font-size: 15px;
+    }
+    .apresentacao > p {
+        font-size: 13px;
     }
 }
 
