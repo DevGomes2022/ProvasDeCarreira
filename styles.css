@@ -48,7 +48,7 @@ header {
 
 .menu-pc {
     position: absolute;
-    top: 13px;
+    top: 20px;
     right: 15px;
 }
 
@@ -59,7 +59,7 @@ header {
 .menu-pc li {
     list-style-type: none;
     display: inline-block;
-    margin: 10px;
+    margin: 0;
 }
 
 .menu-pc a {
