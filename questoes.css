@@ -175,13 +175,14 @@ header {
 .box-filtro li {
     list-style-type: none;
     margin: 30px;
+    text-align: center;
 }
 
 .box-filtro a {
     font-weight: 600;
     text-decoration: none;
     color: black;
-    padding: 10px 125px;
+    padding: 11px 38px;
     font-size: 15px;
     background-color: white;
     border-radius: 5px;
@@ -205,6 +206,8 @@ header {
     transition: 0.4s;
     text-align: center;
     cursor: no-drop;
+    width: 150px;
+    margin: auto;
 }
 
 /*=======================*/
@@ -217,6 +220,232 @@ header {
 .matematica h1 {
     font-size: 20px;
     text-align: center;
+    padding: 10px;
+}
+
+/*=========*/
+
+.mat-a {
+    height: auto;
+    margin: auto;
+}
+
+.qts-a {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eeeeee;
+    margin: 20px;
+}
+
+.box-resposta-a {
+    display: none;
+}
+
+.btn-resolucao-a {
+    padding: 10px 15px;
+    background-color: #06254e;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-resolucao-a:hover {
+    background-color: #1f3758;
+}
+
+/*==========*/
+
+.qts-b {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eeeeee;
+    margin: 20px;
+}
+
+.box-resposta-b {
+    display: none;
+}
+
+.btn-resolucao-b {
+    padding: 10px 15px;
+    background-color: #06254e;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-resolucao-b:hover {
+    background-color: #1f3758;
+}
+
+/*======*/
+
+/*==========*/
+
+.qts-c {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eeeeee;
+    margin: 20px;
+}
+
+.box-resposta-c {
+    display: none;
+}
+
+.btn-resolucao-c {
+    padding: 10px 15px;
+    background-color: #06254e;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-resolucao-c:hover {
+    background-color: #1f3758;
+}
+
+/*======*/
+
+/*==========*/
+
+.qts-d {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eeeeee;
+    margin: 20px;
+}
+
+.box-resposta-d {
+    display: none;
+}
+
+.btn-resolucao-d {
+    padding: 10px 15px;
+    background-color: #06254e;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-resolucao-d:hover {
+    background-color: #1f3758;
+}
+
+/*======*/
+
+/*==========*/
+
+.qts-e {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eeeeee;
+    margin: 20px;
+}
+
+.box-resposta-e {
+    display: none;
+}
+
+.btn-resolucao-e {
+    padding: 10px 15px;
+    background-color: #06254e;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-resolucao-e:hover {
+    background-color: #1f3758;
+}
+
+/*======*/
+
+/*==========*/
+
+.qts-f {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eeeeee;
+    margin: 20px;
+}
+
+.box-resposta-f {
+    display: none;
+}
+
+.btn-resolucao-f {
+    padding: 10px 15px;
+    background-color: #06254e;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-resolucao-f:hover {
+    background-color: #1f3758;
+}
+
+/*======*/
+
+#infoA {
+    display: none;
+}
+
+#infoB {
+    display: none;
+}
+
+#infoC {
+    display: none;
+}
+
+#infoD {
+    display: none;
+}
+
+#infoE {
+    display: none;
+}
+
+#infoF {
+    display: none;
 }
 
 /*=======================*/
@@ -294,7 +523,6 @@ footer {
     font-weight: 800;
     color: red;
 }
-
 
 /*=======================*/
 
