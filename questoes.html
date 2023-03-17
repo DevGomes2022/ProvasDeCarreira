@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="questoes.css">
+    <title>Provas de Carreira - Questões</title>
+</head>
+<body>
+    <div class="container">
+        <div id="btnTop">
+            <img src="assets/IMGS/seta-cima.png" alt="">
+        </div>
+        <header>
+            <div class="logo">
+                <img id="log-a" src="assets/IMGS/Logo PdC-Branco.png" alt="Logo PdC">
+                <img id="log-b" src="assets/IMGS/Logo PdC.png" alt="Logo PdC">
+            </div>
+            <div class="menu-pc">
+                <ul>
+                    <li><a href="#inicio" id="link-a">INÍCIO</a></li>
+                    <li><a href="index.html" id="link-c">VOLTAR</a></li>
+                </ul>
+            </div>
+            <div class="menu-btn" onclick="menuShow()">
+                <svg class="menu-btn-svg" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+            </div>
+            <div class="menu-mobile">
+                <ul>
+                    <li><a href="#inicio">INÍCIO</a></li>
+                    <li><a href="index.html">VOLTAR</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="filtro" id="inicio">
+            <div class="box-filtro">
+                <h1>Matérias que estão disponíveis</h1>
+                <p><strong class="cor-vermelha">Atenção:</strong> As matérias que estão com "*" do lado, não estão disponíveis no momento!</p>
+                <ul>
+                    <li><a href="#matematica" class="matematica">Matemática</a></li>
+                    <li><h2>Português*</h2></li>
+                    <li><h2>História(BR)*</h2></li>
+                    <li><h2>Geografia(BR)*</h2></li>
+                    <li><h2>Inglês*</h2></li>
+                </ul>
+            </div>
+        </div>
+        <div id="matematica" class="matematica">
+            <h1>Matemática</h1>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><p>Site criado no Brasil(BR)</p></li>
+                <li><img src="assets/IMGS/icone brasil.png" alt="Bandeira do Brasil"></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="index.html">Voltar</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><p>Email: provasdecarreira@gmail.com</p></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="java-questoes.js"></script>
+    <script src="scroltop-questoes.js"></script>
+</body>
+</html>
